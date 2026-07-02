@@ -25,14 +25,14 @@ npm run dev
 
 Приклад назв гілок:
 
-feature/header
-feature/hero
-feature/about
-feature/how-to-play
-feature/gallery
-feature/feedback
-feature/end
-feature/footer
+* feature/header
+* feature/hero
+* feature/about
+* feature/how-to-play
+* feature/gallery
+* feature/faq
+* feature/end
+* feature/footer
 
 Перед оновленням потрібно зберегти поточні зміни
 
