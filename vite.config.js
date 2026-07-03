@@ -12,7 +12,7 @@ export default defineConfig(({ command }) => {
     },
     root: 'src',
 
-    base: "evpl-landing-page",
+    base: "/evpl-landing-page/",
 
     build: {
       sourcemap: true,
