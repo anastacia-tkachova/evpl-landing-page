@@ -12,8 +12,6 @@ export default defineConfig(({ command }) => {
     },
     root: 'src',
 
-    base: "/evpl-landing-page/",
-
     build: {
       sourcemap: true,
       rollupOptions: {
