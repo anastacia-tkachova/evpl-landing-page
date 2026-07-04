@@ -20,18 +20,24 @@
 }
 
 .end-ready-text {
-  font-family: 'Wendy', sans-serif;
   font-weight: 400;
   font-size: 18px;
   color: #f8fafc;
 }
 .end-btn {
-  text-decoration: none;
-  color: inherit;
-  border-radius: 8px;
-  padding: 10px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
   min-width: 202px;
-  background-color: #e5e7eb;
+  padding: 10px 0;
+  border: none;
+  border-radius: 8px;
+  background: #e5e7eb;
+  text-decoration: none;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
   margin-bottom: 8px;
 }
 .end-btn-link {
@@ -49,14 +55,13 @@
   fill: transparent;
 }
 .end-link-text {
-  font-family: 'Fredoka', sans-serif;
   font-weight: 400;
   font-size: 12px;
   letter-spacing: -0.02em;
   color: #111827;
+  transition: color 0.3s ease;
 }
 .end-link-email {
-  font-family: 'Fredoka', sans-serif;
   font-weight: 400;
   font-size: 14px;
   color: #f8fafc;
@@ -81,10 +86,27 @@
   }
 
   .end-ready-text {
-    font-family: 'Fredoka', sans-serif;
     font-size: 32px;
   }
   .end-logo-desktop {
     display: flex;
+  }
+  .end-btn:hover {
+    background: #f8fafc;
+  }
+
+  .end-btn:hover .end-link-text {
+    color: #000;
+  }
+
+  .end-btn:focus,
+  .end-btn:focus-visible {
+    background: #4833ff;
+    outline: none;
+  }
+
+  .end-btn:focus .end-link-text,
+  .end-btn:focus-visible .end-link-text {
+    color: #e5e7eb;
   }
 }

@@ -12,6 +12,7 @@
 
 .footer-logo {
   display: none;
+  text-decoration: none;
 }
 .footer-logo-img {
   border-radius: 15px;
@@ -22,14 +23,13 @@
 }
 
 .footer-logo-text {
-  font-family: 'Fredoka', sans-serif;
   font-weight: 400;
   font-size: 20px;
   line-height: 0.9;
   color: #111827;
+  transition: color 0.3s ease;
 }
 .footer-logo-3d {
-  font-family: 'Fredoka', sans-serif;
   border-radius: 4px;
   background-color: #5e4cff;
   display: inline-flex;
@@ -49,10 +49,10 @@
 }
 
 .footer-link-policy {
-  font-family: 'Fredoka', sans-serif;
   font-size: 14px;
-  color: #6d5dfc;
+  color: #000;
   text-decoration: none;
+  transition: color 0.3s ease;
 }
 
 .footer-line {
@@ -62,19 +62,52 @@
 }
 
 .footer-text {
-  font-family: 'Fredoka', sans-serif;
   font-weight: 400;
   font-size: 14px;
-  color: #111827;
+  color: #000;
 }
+
+.footer-copyright {
+  color: #000;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
 @media only screen and (min-width: 1440px) {
   .footer-container {
-    display: flex;
     flex-direction: row;
     justify-content: space-between;
   }
   .footer-logo {
     display: flex;
     gap: 18px;
+  }
+  .footer-logo:hover .footer-logo-text {
+    color: #5e4cff;
+  }
+  .footer-logo:focus .footer-logo-text,
+  .footer-logo:focus-visible .footer-logo-text {
+    color: #4833ff;
+  }
+  .footer-logo:focus,
+  .footer-logo:focus-visible {
+    outline: none;
+  }
+  .footer-link-policy:hover {
+    color: #5e4cff;
+  }
+  .footer-link-policy:focus,
+  .footer-link-policy:focus-visible {
+    color: #4833ff;
+    outline: none;
+  }
+  .footer-copyright:hover {
+    color: #5e4cff;
+  }
+
+  .footer-copyright:focus,
+  .footer-copyright:focus-visible {
+    color: #4833ff;
+    outline: none;
   }
 }
