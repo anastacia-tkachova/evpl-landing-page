@@ -1,6 +1,7 @@
-# Запуск проєкту локально
+# Запуск проєкту локально:
 
 ## 1. Клонувати репозиторій
+
 ## 2. Встановити залежності
 
 ```bash
@@ -25,14 +26,14 @@ npm run dev
 
 Приклад назв гілок:
 
-* feature/header
-* feature/hero
-* feature/about
-* feature/how-to-play
-* feature/gallery
-* feature/faq
-* feature/end
-* feature/footer
+- feature/header
+- feature/hero
+- feature/about
+- feature/how-to-play
+- feature/gallery
+- feature/faq
+- feature/end
+- feature/footer
 
 Перед оновленням потрібно зберегти поточні зміни
 
@@ -41,7 +42,6 @@ npm run dev
 ```bash
 git checkout main
 ```
-
 
 ## Крок 2. Завантажуємо найсвіжіший код з GitHub
 
@@ -65,8 +65,7 @@ git merge main
 
 Під свою задачу створюємо окрему гілку
 
-Працюємо тільки у своїй гілці
-Після змін:
+Працюємо тільки у своїй гілці Після змін:
 
 ```bash
 git add .
@@ -77,6 +76,7 @@ git push -u origin feature/header
 ---
 
 ## Коротко
+
 1. Оновити main
 2. Створити свою feature/... гілку
 3. Зробити задачу
