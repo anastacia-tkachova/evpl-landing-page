@@ -13,11 +13,13 @@
   font-size: 26px;
   color: #4134b2;
 }
+
 .play-title-text {
   font-weight: 600;
   font-size: 24px;
   text-align: center;
   color: #111827;
+  max-width: 343px;
 }
 .play-list {
   display: flex;
@@ -38,6 +40,7 @@
   border-radius: 10px;
   padding: 10px;
   width: 343px;
+  height: 177px;
   box-shadow: 4px 4px 8px 1px rgba(0, 0, 0, 0.35);
   background: #f8fafc;
 }
@@ -50,6 +53,7 @@
   font-size: 18px;
   text-align: center;
   color: #111827;
+  margin-bottom: 6px;
 }
 .play-card-text {
   font-weight: 600;
@@ -59,4 +63,26 @@
 }
 .play-card-svg {
   fill: #4134b2;
+}
+@media only screen and (min-width: 1440px) {
+  .play-title {
+    font-size: 20px;
+  }
+  .play-title-text {
+    max-width: 100%;
+  }
+  .play-list {
+    flex-direction: row;
+    gap: 19px;
+  }
+  .play-arrow {
+    transform: rotate(-90deg);
+  }
+  .play-card {
+    width: 168px;
+    height: 220px;
+  }
+  .play-card-text {
+    font-size: 12px;
+  }
 }

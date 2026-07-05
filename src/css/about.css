@@ -18,7 +18,6 @@
   height: 100%;
   object-fit: cover;
   border-radius: 20px;
-  box-shadow: inset 6px 6px 10px 0 rgba(0, 0, 0, 0.35);
 }
 .about-title {
   font-family: var(--second-family);
