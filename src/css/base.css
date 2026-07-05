@@ -33,13 +33,17 @@ main {
   flex-grow: 1;
 }
 
+section {
+  scroll-margin-top: 80px;
+}
+
 button,
 input,
 textarea,
 a {
   font: inherit;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-              color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms ease,
+              color 250ms ease;
 }
 
 html {
@@ -49,8 +53,6 @@ html {
 button {
   border: none;
   background: none;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-              color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 [data-visible='open'] {

@@ -28,9 +28,6 @@
   font-size: 20px;
   line-height: 0.9;
   color: #111827;
-  transition:
-    color 250ms ease,
-    transform 250ms ease;
 }
 .footer-logo-3d {
   font-family: var(--font-family);
@@ -57,9 +54,6 @@
   font-weight: 700;
   color: #000;
   text-decoration: none;
-  transition:
-    color 250ms ease,
-    transform 250ms ease;
 }
 
 .footer-line {
@@ -88,7 +82,6 @@
   }
   .footer-logo:hover .footer-logo-text {
     color: #5e4cff;
-    transform: scale(1.03);
   }
   .footer-logo:focus .footer-logo-text,
   .footer-logo:focus-visible .footer-logo-text {
@@ -99,7 +92,6 @@
   }
   .footer-link-policy:hover {
     color: #5e4cff;
-    transform: scale(1.03);
   }
 
   .footer-link-policy:focus-visible {
