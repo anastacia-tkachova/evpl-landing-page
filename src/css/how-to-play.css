@@ -1,0 +1,62 @@
+.how-to-play {
+  background-color: #e5e7eb;
+}
+.play {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+.play-title {
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 26px;
+  color: #4134b2;
+}
+.play-title-text {
+  font-weight: 600;
+  font-size: 24px;
+  text-align: center;
+  color: #111827;
+}
+.play-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+.play-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+.play-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+  padding: 10px;
+  width: 343px;
+  box-shadow: 4px 4px 8px 1px rgba(0, 0, 0, 0.35);
+  background: #f8fafc;
+}
+.play-card-img {
+  margin-bottom: 10px;
+}
+.play-card-title {
+  font-family: 'Wendy One', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  text-align: center;
+  color: #111827;
+}
+.play-card-text {
+  font-weight: 600;
+  font-size: 14px;
+  text-align: center;
+  color: #6b7280;
+}
+.play-card-svg {
+  fill: #4134b2;
+}
