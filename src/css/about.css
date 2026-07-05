@@ -90,6 +90,7 @@
   border-radius: 50%;
   overflow: hidden;
   flex-shrink: 0;
+  transition: transform 250ms ease;
 }
 .about-feature-svg {
   display: block;
@@ -141,5 +142,8 @@
   }
   .about-feature {
     align-items: flex-start;
+  }
+  .about-feature:hover .about-feature-icon {
+    transform: scale(1.08);
   }
 }
