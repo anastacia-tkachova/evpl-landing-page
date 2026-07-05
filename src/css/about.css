@@ -14,6 +14,9 @@
 }
 .about-img-desktop {
   display: none;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
   border-radius: 20px;
   box-shadow: inset 6px 6px 10px 0 rgba(0, 0, 0, 0.35);
 }
@@ -29,7 +32,7 @@
 }
 .about-puzzle-text {
   font-weight: 600;
-  font-size: 24px;
+  font-size: 20px;
   text-align: center;
   color: var(--text-text-primary);
   margin: 0;
@@ -50,7 +53,7 @@
 .about-text {
   font-family: var(--second-family);
   font-weight: 400;
-  font-size: 20px;
+  font-size: 17px;
   text-align: center;
   color: var(--text-text-secondary);
   margin: 0;
@@ -97,9 +100,6 @@
 @media only screen and (min-width: 1440px) {
   .about-img-desktop {
     display: block;
-    width: 552px;
-    height: 408px;
-    flex-shrink: 0;
   }
   .about-img {
     display: none;
@@ -107,18 +107,18 @@
   .about-img-content {
     display: flex;
     flex-direction: row;
-    gap: 24px;
+    gap: 20px;
   }
   .about-title {
     font-size: 20px;
-    margin-bottom: 24px;
+    margin-bottom: 20px;
   }
 
   .desktop-break {
     display: inline;
   }
   .about-puzzle-text {
-    font-size: 28px;
+    font-size: 24px;
     text-align: left;
     margin-bottom: 10px;
   }
