@@ -83,7 +83,7 @@
   background-position: center;
   background-size: cover;
   margin: 0 auto;
-  background: rgba(116, 116, 116, 0);
+  background-color: rgba(116, 116, 116, 0);
 }
 
 @keyframes fadeUp {
