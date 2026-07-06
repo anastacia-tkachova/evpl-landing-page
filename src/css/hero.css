@@ -8,7 +8,6 @@
 #hero {
   display: flex;
   align-items: center;
-  justify-content: space-between;
 }
 .hero-start {
   display: flex;
@@ -257,8 +256,8 @@
 @media only screen and (min-width: 1440px) {
   .hero-container {
     background-image: url('../img/hero-home-1x.png');
-    background-size: 135%;
-    background-position: 70% 72%;
+    background-size: 100%;
+    /* background-position: 70% 72%; */
     box-shadow:
       inset 36px 25px 45px 0 var(--lite-background),
       inset -53px -34px 45px 0 var(--lite-background);
