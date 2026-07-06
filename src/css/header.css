@@ -55,12 +55,14 @@
   display: none;
 }
 .burger {
-  display: inline-flex;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 46px;
   height: 44px;
+  padding: 0;
   flex-shrink: 0;
-  transition: fill 250ms ease,
-              color 250ms ease;
+  transition: fill 250ms ease;
 }
 .burger-menu-icon {
   fill: var(--text-black);
@@ -70,14 +72,15 @@
   fill: var(--cta-tap);
 }
 .burger-close {
-  font-weight: 700;
-  font-size: 50px;
-  line-height: 0.7;
-  text-align: center;
+  width: 46px;
+  height: 44px;
+  flex-shrink: 0;
+  fill: var(--text-black);
+  transform: rotate(45deg);
 }
 .burger:active .burger-close,
 .burger:focus .burger-close {
-  color: var(--cta-tap);
+  fill: var(--cta-tap);
 }
 .mobile-menu {
   position: fixed;

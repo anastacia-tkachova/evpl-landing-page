@@ -5,8 +5,8 @@ const bodyEl = document.body;
 burgerBtnEl.addEventListener('click', () => {
   const isOpen = burgerMenuEl.dataset.visible === 'open';
 
-  const iconEl = burgerBtnEl.querySelector('svg');
-  const letterEl = burgerBtnEl.querySelector('span');
+  const iconEl = burgerBtnEl.querySelector('[data-burger-open]');
+  const letterEl = burgerBtnEl.querySelector('[data-burger-close]');
 
   if (isOpen) {
     burgerMenuEl.dataset.visible = 'close';

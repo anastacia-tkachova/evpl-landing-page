@@ -59,11 +59,13 @@
       aria-expanded="false"
       data-action="open"
     >
-      <svg class="burger-menu-icon" width="37" height="36" data-visible="open">
+      <svg class="burger-menu-icon" width="37" height="36" data-visible="open" data-burger-open>
         <use href="{=$icon-burger-menu}"></use>
       </svg>
 
-      <span class="burger-close" data-visible="close">x</span>
+      <svg class="burger-close" data-visible="close" data-burger-close>
+        <use href="{=$header-plus}"></use>
+      </svg>
     </button>
   </div>
 
