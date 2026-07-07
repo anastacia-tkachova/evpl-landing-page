@@ -5,20 +5,20 @@ const bodyEl = document.body;
 burgerBtnEl.addEventListener('click', () => {
   const isOpen = burgerMenuEl.dataset.visible === 'open';
 
-  const iconEl = burgerBtnEl.querySelector('[data-burger-open]');
-  const letterEl = burgerBtnEl.querySelector('[data-burger-close]');
+  const openEl = burgerBtnEl.querySelector('[data-burger-open]');
+  const closeEl = burgerBtnEl.querySelector('[data-burger-close]');
 
   if (isOpen) {
     burgerMenuEl.dataset.visible = 'close';
 
-    iconEl.dataset.visible = 'open';
-    letterEl.dataset.visible = 'close';
+    openEl.dataset.visible = 'open';
+    closeEl.dataset.visible = 'close';
     bodyEl.removeAttribute('data-scroll');
   } else {
     burgerMenuEl.dataset.visible = 'open';
 
-    iconEl.dataset.visible = 'close';
-    letterEl.dataset.visible = 'open';
+    openEl.dataset.visible = 'close';
+    closeEl.dataset.visible = 'open';
     bodyEl.setAttribute('data-scroll', 'lock');
   }
 });
@@ -26,13 +26,13 @@ burgerBtnEl.addEventListener('click', () => {
 const menuLinks = document.querySelectorAll('.mobile-nav-link');
 menuLinks.forEach(link => {
   link.addEventListener('click', () => {
-    const iconEl = burgerBtnEl.querySelector('svg');
-    const letterEl = burgerBtnEl.querySelector('span');
+    const openEl = burgerBtnEl.querySelector('[data-burger-open]');
+    const closeEl = burgerBtnEl.querySelector('[data-burger-close]');
 
     burgerMenuEl.dataset.visible = 'close';
 
-    iconEl.dataset.visible = 'open';
-    letterEl.dataset.visible = 'close';
+    openEl.dataset.visible = 'open';
+    closeEl.dataset.visible = 'close';
     bodyEl.removeAttribute('data-scroll');
   });
 });

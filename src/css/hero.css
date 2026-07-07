@@ -2,8 +2,10 @@
   background-image: url(../img/start-1x.png);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 375px auto;
+  background-size: cover;
   margin: 0 auto;
+  max-width: 375px;
+
 }
 #hero {
   display: flex;
