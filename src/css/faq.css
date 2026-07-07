@@ -127,9 +127,10 @@
   }
   .faq-pic {
     display: block;
+    margin-top: 4px;
     transition: transform 250ms ease;
   }
-  .faq-content:hover .faq-pic {
+  .faq-pic:hover {
     transform: scale(1.1) translateX(8px) translateY(8px);
   }
 }
