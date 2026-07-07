@@ -5,7 +5,6 @@
   background-size: cover;
   margin: 0 auto;
   max-width: 375px;
-
 }
 #hero {
   display: flex;
@@ -259,7 +258,7 @@
   .hero-container {
     background-image: url('../img/hero-home-1x.png');
     background-size: 100%;
-    /* background-position: 70% 72%; */
+    max-width: 1440px;
     box-shadow:
       inset 36px 25px 45px 0 var(--lite-background),
       inset -53px -34px 45px 0 var(--lite-background);
