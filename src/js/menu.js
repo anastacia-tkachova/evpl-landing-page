@@ -32,6 +32,7 @@ menuLinks.forEach(link => {
     burgerMenuEl.dataset.visible = 'close';
 
     iconEl.dataset.visible = 'open';
+
     letterEl.dataset.visible = 'close';
     bodyEl.removeAttribute('data-scroll');
   });
