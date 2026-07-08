@@ -23,7 +23,7 @@ burgerBtnEl.addEventListener('click', () => {
   }
 });
 
-const menuLinks = document.querySelectorAll('.mobile-nav-link');
+const menuLinks = document.querySelectorAll('[data-mobile-link]');
 menuLinks.forEach(link => {
   link.addEventListener('click', () => {
     const openEl = burgerBtnEl.querySelector('[data-burger-open]');
